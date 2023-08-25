@@ -60,10 +60,7 @@ def automated_report(access_token):
         print('Automated_Mail_Response_json', response.json())
         # Check if the request was successful (status code 200)
         if response.status_code == 201:
-            data = response.json()
-            print("automated_report status:", response.status_code)
-            print("automated_report data:", data[0]['access_token'])
-            automated_report(data[0]['access_token'])
+            print("Success on Triggered automated mail for : - ",  os.environ.get("tenantid"))
         else:
             print("automated_report request failed with status code:", response.json())
             print("automated_report request failed with status code:", response.status_code)
