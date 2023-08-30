@@ -1,7 +1,7 @@
 # Use the official Python image as the base image
 # docker image build -t automated-mail-script -f Dockerfile .
-# $ docker tag automated-mail-script:latest ramalin/automated-mail-script:v1.1.2
-# $ docker push ramalin/automated-mail-script:v1.1.2
+# $ docker tag automated-mail-script:latest ramalin/automated-mail-script:v1.1.3
+# $ docker push ramalin/automated-mail-script:v1.1.3
 
 FROM python:3.9-slim
 

@@ -26,7 +26,7 @@ def login_to_get_athu_key():
         }
 
         print('headersVal', headers_val)
-        # Make an HTTP GET request
+        # Make an HTTP POST request
         response = session.post(url, headers=headers_val)  # Use headers=headers as named argument
 
         # Check if the request was successful (status code 200)
@@ -55,7 +55,7 @@ def automated_report(access_token):
         print('automatedMailUrl', automated_mail_url)
 
         # Make an HTTP GET request
-        response = session.post(automated_mail_url, headers=headersVal)  # Use headers=headers as named argument
+        response = session.get(automated_mail_url, headers=headersVal)  # Use headers=headers as named argument
 
         print('Automated_Mail_Response_json', response.json())
         # Check if the request was successful (status code 200)
